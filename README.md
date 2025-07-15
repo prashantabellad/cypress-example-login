@@ -53,15 +53,16 @@ cypress-login-tests/
 1. **Environment Dependencies**
    node version 20 and above
 
-1. **Install Dependencies**
+2. **Clone the repo**
+
+3. **Install Dependencies**
 
    ```bash
    npm install
    ```
 
-2. **Clone the repo**
 
-3. **Install Project dependencies from the root of the project** 
+4. **Install Project dependencies from the root of the project** 
    ```bash
    npm install 
    ```
