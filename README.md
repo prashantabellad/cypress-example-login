@@ -11,6 +11,8 @@ I have experience working with different test automation tools and the reason to
 5. The above helps the test engineer to focus on user steps/ behaviour instead of what pages have been implemented (Page Object Model from Selenium)
 6. Cypress helps build robust less flaky tests with features like network intercept, seeding data through API calls, data mocking etc
 7. Cypress GUI based test interaction is best in the business for fast test creation and debugging
+8. You can add custom test attributes in the front end code (if accessible) and use the same in the test script which makes the test script independent of developer introduced attributes like class, id. This helps in less maintanance when the UI changes
+9. 
 
 Please refer to my blogpost on why I prefer not build test suites in Cypress with Page Object Model
 https://medium.com/@prashantabellad/thinking-beyond-page-object-model-in-cypress-test-automation-310e32840473
