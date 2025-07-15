@@ -48,14 +48,17 @@ cypress-login-tests/
    npm install
    ```
 
-1. **Install Cypress** (if not already installed)
+2. **Clone the repo**
+
+3. **Install Project dependencies from the root of the project** 
    ```bash
-   npm install cypress --save-dev
+   npm install 
    ```
 
 ## Running Tests
 
 ### Interactive Mode (Cypress Test Runner)
+Run below command from project root folder
 
 ```bash
 npm run test
@@ -65,6 +68,7 @@ Select `E2E Testing` on Welcome to Cypress page
 Select one of the browsers Electron, Chrome etc
 
 ### Headless Mode
+Run below command from project root folder
 
 ```bash
 npm run test:headless
