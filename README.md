@@ -1,6 +1,6 @@
 # E2E Automated Tests for Biorev
 
-Automated tests for login functionality using Cypress with and without Page Object Model.
+Automated tests for login functionality using Cypress with both approaches of with and without Page Object Model.
 
 Please refer to my blogpost on why I prefer not build test suites in Cypress with Page Object Model
 https://medium.com/@prashantabellad/thinking-beyond-page-object-model-in-cypress-test-automation-310e32840473
