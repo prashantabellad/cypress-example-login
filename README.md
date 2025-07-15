@@ -67,6 +67,10 @@ cypress-login-tests/
    ```
 
 ## Running Tests
+ENV FILE
+Create .env file by copying .env.example
+Add below config
+CYPRESS_BASE_URL=https://the-internet.herokuapp.com
 
 ### Interactive Mode (Cypress Test Runner)
 Run below command from project root folder
