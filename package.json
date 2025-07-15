@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "test-headless": "cypress run"
+    "test-headless": "cypress run",
+    "test-smoke": "CYPRESS_INCLUDE_TAGS=smoke npx cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.5.1",
+    "cypress-dotenv": "^2.0.0",
+    "cypress-tags": "^1.2.2",
     "dotenv": "^16.0.1",
-    "cypress-dotenv": "^2.0.0"
+    "typescript": "^5.8.3"
   }
 }
