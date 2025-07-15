@@ -2,6 +2,16 @@
 
 Automated tests for login functionality using Cypress with both approaches of with and without Page Object Model.
 
+# Why Cypress
+I have experience working with different test automation tools and the reason to choose Cypress is:
+1. Easy to setup
+2. Easy to build test script using reusable Custom Commands
+3. We can use Custom Commands to move all the reusable user actions --> selecting from dropdown, steps --> Login, Logout, navigation, file uploads etc as resuable Commands
+4. So Test Engineer can easliy translate the manual user steps of a test case into automated Cypress scripts leveraging Custom Commands
+5. The above helps the test engineer to focus on user steps/ behaviour instead of what pages have been implemented (Page Object Model from Selenium)
+6. Cypress helps build robust less flaky tests with features like network intercept, seeding data through API calls, data mocking etc
+7. Cypress GUI based test interaction is best in the business for fast test creation and debugging
+
 Please refer to my blogpost on why I prefer not build test suites in Cypress with Page Object Model
 https://medium.com/@prashantabellad/thinking-beyond-page-object-model-in-cypress-test-automation-310e32840473
 
