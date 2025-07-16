@@ -55,14 +55,7 @@ cypress-login-tests/
 
 2. **Clone the repo**
 
-3. **Install Dependencies**
-
-   ```bash
-   npm install
-   ```
-
-
-4. **Install Project dependencies from the root of the project** 
+3. **Install Project dependencies from the root of the project** 
    ```bash
    npm install 
    ```
