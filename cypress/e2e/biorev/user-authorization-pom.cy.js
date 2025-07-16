@@ -2,7 +2,7 @@
 import { validUser } from "../../support/testdata";
 import LoginPage from "../../support/pageObjectModels/LoginPageObject";
 
-describe("Login Functionality Tests", () => {
+describe("POM: User Authorization for biorev's herokuapp", () => {
   let loginPage;
   const { username, password } = validUser;
 

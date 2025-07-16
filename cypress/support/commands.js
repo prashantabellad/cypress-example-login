@@ -34,7 +34,9 @@ Cypress.Commands.add("getElementBySelector", (selector, timeout) => {
       })
     : cy.get(selector);
 });
-
+/**
+ * User login
+ */
 Cypress.Commands.add("loginUser", ({ username, password }) => {
   cy.visit("/login");
   cy.getElementBySelector("#username").type(username);
@@ -42,7 +44,9 @@ Cypress.Commands.add("loginUser", ({ username, password }) => {
   cy.getElementBySelector('button[type="submit"]').click();
 });
 
-// Custom command to verify login page elements
+/**
+ * Verify login page elements
+ */
 Cypress.Commands.add("verifyLoginPage", () => {
   cy.getElementBySelector("h2").should("contain.text", "Login Page");
   cy.getElementBySelector("#username").should("be.visible");
@@ -62,28 +66,33 @@ Cypress.Commands.add("validateSuccessfulLogin", () => {
   );
 });
 
-// Custom command to verify error messages
-Cypress.Commands.add("validateErrorMessage", (expectedMessage) => {
-  cy.getElementBySelector("#flash")
-    .should("be.visible")
-    .and("have.class", "error")
-    .and("contain.text", expectedMessage);
-  cy.url().should("include", "/login");
-});
+/**
+ * Validate error messages in the application
+ * @input expectedMessage - The expected error message to validate
+ * @input pageUrl - Optional page URL on which the error message is displayed
+ */
+Cypress.Commands.add(
+  "validateErrorMessage",
+  (expectedMessage, pageUrl = "/login") => {
+    cy.getElementBySelector("#flash")
+      .should("be.visible")
+      .and("have.class", "error")
+      .and("contain.text", expectedMessage);
+    cy.url().should("include", pageUrl);
+  }
+);
 
-// Custom command to verify secure area access
-Cypress.Commands.add("verifySecureArea", () => {
-  cy.getElementBySelector("h2").should("contain.text", "Secure Area");
-  cy.getElementBySelector('a[href="/logout"]').should("be.visible");
-});
-
-// Custom command to dismiss error message
+/**
+ * Dismiss or close Error Message
+ * This is another small example of reusable commands which has the
+ * potential to be used across multiple tests
+ */
 Cypress.Commands.add("dismissErrorMessage", () => {
   cy.getElementBySelector("#flash a").click();
   cy.getElementBySelector("#flash").should("not.exist");
 });
 /**
- * Logout command to logout the user
+ * Logout the user
  */
 Cypress.Commands.add("logout", () => {
   cy.getElementBySelector('a[href="/logout"]').click();

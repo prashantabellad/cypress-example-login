@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { validUser } from "../../support/testdata";
 
-describe("User Authorization for biorev", () => {
+describe("User Authorization for biorev's herokuapp", () => {
   const { username, password } = validUser;
   context("Valid Login", () => {
     it(

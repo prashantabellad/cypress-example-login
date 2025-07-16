@@ -31,7 +31,7 @@ class LoginPage {
 
   // Actions
   visit() {
-    cy.visit("https://the-internet.herokuapp.com/login");
+    cy.visit(Cypress.config(`${baseUrl}`));
   }
 
   enterUsername(username) {
