@@ -83,5 +83,12 @@ Select one of the browsers Electron, Chrome etc
 Run below command from project root folder
 
 ```bash
-npm run test:headless
+npm run test-headless
+```
+
+### Run SMOKE tests in Headless Mode
+Run below command from project root folder
+
+```bash
+npm run test-smoke
 ```
